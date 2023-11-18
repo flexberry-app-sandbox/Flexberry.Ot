@@ -41,6 +41,8 @@ namespace IIS.Ot
         
         private string fОтветсЛицо;
         
+        private IIS.Ot.Договор fДоговор;
+        
         // *** Start programmer edit section *** (Контрагент CustomMembers)
 
         // *** End programmer edit section *** (Контрагент CustomMembers)
@@ -107,6 +109,40 @@ namespace IIS.Ot
                 // *** Start programmer edit section *** (Контрагент.ОтветсЛицо Set end)
 
                 // *** End programmer edit section *** (Контрагент.ОтветсЛицо Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Контрагент.
+        /// </summary>
+        // *** Start programmer edit section *** (Контрагент.Договор CustomAttributes)
+
+        // *** End programmer edit section *** (Контрагент.Договор CustomAttributes)
+        [PropertyStorage(new string[] {
+                "Договор"})]
+        [NotNull()]
+        public virtual IIS.Ot.Договор Договор
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Контрагент.Договор Get start)
+
+                // *** End programmer edit section *** (Контрагент.Договор Get start)
+                IIS.Ot.Договор result = this.fДоговор;
+                // *** Start programmer edit section *** (Контрагент.Договор Get end)
+
+                // *** End programmer edit section *** (Контрагент.Договор Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Контрагент.Договор Set start)
+
+                // *** End programmer edit section *** (Контрагент.Договор Set start)
+                this.fДоговор = value;
+                // *** Start programmer edit section *** (Контрагент.Договор Set end)
+
+                // *** End programmer edit section *** (Контрагент.Договор Set end)
             }
         }
         

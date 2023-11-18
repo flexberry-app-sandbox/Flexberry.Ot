@@ -64,6 +64,8 @@ namespace IIS.Ot
         
         private IIS.Ot.ТранспСр fТранспСр;
         
+        private IIS.Ot.Организация fОрганизация;
+        
         // *** Start programmer edit section *** (ЖурналУчета CustomMembers)
 
         // *** End programmer edit section *** (ЖурналУчета CustomMembers)
@@ -291,6 +293,40 @@ namespace IIS.Ot
         /// <summary>
         /// Журнал учета.
         /// </summary>
+        // *** Start programmer edit section *** (ЖурналУчета.Организация CustomAttributes)
+
+        // *** End programmer edit section *** (ЖурналУчета.Организация CustomAttributes)
+        [PropertyStorage(new string[] {
+                "Организация"})]
+        [NotNull()]
+        public virtual IIS.Ot.Организация Организация
+        {
+            get
+            {
+                // *** Start programmer edit section *** (ЖурналУчета.Организация Get start)
+
+                // *** End programmer edit section *** (ЖурналУчета.Организация Get start)
+                IIS.Ot.Организация result = this.fОрганизация;
+                // *** Start programmer edit section *** (ЖурналУчета.Организация Get end)
+
+                // *** End programmer edit section *** (ЖурналУчета.Организация Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (ЖурналУчета.Организация Set start)
+
+                // *** End programmer edit section *** (ЖурналУчета.Организация Set start)
+                this.fОрганизация = value;
+                // *** Start programmer edit section *** (ЖурналУчета.Организация Set end)
+
+                // *** End programmer edit section *** (ЖурналУчета.Организация Set end)
+            }
+        }
+        
+        /// <summary>
+        /// Журнал учета.
+        /// </summary>
         // *** Start programmer edit section *** (ЖурналУчета.ТранспСр CustomAttributes)
 
         // *** End programmer edit section *** (ЖурналУчета.ТранспСр CustomAttributes)
@@ -329,7 +365,6 @@ namespace IIS.Ot
         public virtual void Отправить()
         {
             // *** Start programmer edit section *** (ЖурналУчета.Отправить method implementation)
-
             return;
             // *** End programmer edit section *** (ЖурналУчета.Отправить method implementation)
         }

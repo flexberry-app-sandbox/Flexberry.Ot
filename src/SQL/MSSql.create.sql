@@ -84,6 +84,8 @@ CREATE TABLE [ЖурналУчета] (
 
 	 [ФИО] VARCHAR(255)  NULL,
 
+	 [Организация] UNIQUEIDENTIFIER  NOT NULL,
+
 	 [ТранспСр] UNIQUEIDENTIFIER  NOT NULL,
 
 	 PRIMARY KEY ([primaryKey]))
@@ -149,8 +151,6 @@ CREATE TABLE [Договор] (
 
 	 [ОбязанПосред] VARCHAR(255)  NULL,
 
-	 [Контрагент] UNIQUEIDENTIFIER  NOT NULL,
-
 	 [Организация] UNIQUEIDENTIFIER  NOT NULL,
 
 	 [РукОтдЛог] UNIQUEIDENTIFIER  NOT NULL,
@@ -165,6 +165,8 @@ CREATE TABLE [Контрагент] (
 	 [Организация] VARCHAR(255)  NULL,
 
 	 [ОтветсЛицо] VARCHAR(255)  NULL,
+
+	 [Договор] UNIQUEIDENTIFIER  NOT NULL,
 
 	 PRIMARY KEY ([primaryKey]))
 

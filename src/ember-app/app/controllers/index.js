@@ -22,55 +22,54 @@ export default Controller.extend({
             link: 'i-i-s-ot-тч-раб-вод-авто-l',
             caption: i18n.t('forms.application.sitemap.ot.i-i-s-ot-тч-раб-вод-авто-l.caption'),
             title: i18n.t('forms.application.sitemap.ot.i-i-s-ot-тч-раб-вод-авто-l.title'),
-            icon: 'book',
+            icon: 'file',
             children: null
           }, {
             link: 'i-i-s-ot-организация-l',
             caption: i18n.t('forms.application.sitemap.ot.i-i-s-ot-организация-l.caption'),
             title: i18n.t('forms.application.sitemap.ot.i-i-s-ot-организация-l.title'),
-            icon: 'table',
+            icon: 'folder',
             children: null
           }, {
             link: 'i-i-s-ot-персонал-l',
             caption: i18n.t('forms.application.sitemap.ot.i-i-s-ot-персонал-l.caption'),
             title: i18n.t('forms.application.sitemap.ot.i-i-s-ot-персонал-l.title'),
-            icon: 'table',
+            icon: 'edit',
             children: null
           }, {
             link: 'i-i-s-ot-тч-движ-г-с-м-l',
             caption: i18n.t('forms.application.sitemap.ot.i-i-s-ot-тч-движ-г-с-м-l.caption'),
             title: i18n.t('forms.application.sitemap.ot.i-i-s-ot-тч-движ-г-с-м-l.title'),
-            icon: 'briefcase',
+            icon: 'table',
             children: null
           }, {
             link: 'i-i-s-ot-журнал-учета-l',
             caption: i18n.t('forms.application.sitemap.ot.i-i-s-ot-журнал-учета-l.caption'),
             title: i18n.t('forms.application.sitemap.ot.i-i-s-ot-журнал-учета-l.title'),
-            icon: 'book',
+            icon: 'suitcase',
             children: null
           }, {
             link: 'i-i-s-ot-трансп-ср-l',
             caption: i18n.t('forms.application.sitemap.ot.i-i-s-ot-трансп-ср-l.caption'),
             title: i18n.t('forms.application.sitemap.ot.i-i-s-ot-трансп-ср-l.title'),
-            icon: 'archive',
             children: null
           }, {
             link: 'i-i-s-ot-должности-l',
             caption: i18n.t('forms.application.sitemap.ot.i-i-s-ot-должности-l.caption'),
             title: i18n.t('forms.application.sitemap.ot.i-i-s-ot-должности-l.title'),
-            icon: 'tags',
+            icon: 'file',
             children: null
           }, {
             link: 'i-i-s-ot-т-ч-водитель-l',
             caption: i18n.t('forms.application.sitemap.ot.i-i-s-ot-т-ч-водитель-l.caption'),
             title: i18n.t('forms.application.sitemap.ot.i-i-s-ot-т-ч-водитель-l.title'),
-            icon: 'building',
+            icon: 'archive',
             children: null
           }, {
             link: 'i-i-s-ot-рук-отд-лог-l',
             caption: i18n.t('forms.application.sitemap.ot.i-i-s-ot-рук-отд-лог-l.caption'),
             title: i18n.t('forms.application.sitemap.ot.i-i-s-ot-рук-отд-лог-l.title'),
-            icon: 'file',
+            icon: 'tags',
             children: null
           }, {
             link: 'i-i-s-ot-договор-l',
@@ -82,19 +81,19 @@ export default Controller.extend({
             link: 'i-i-s-ot-контрагент-l',
             caption: i18n.t('forms.application.sitemap.ot.i-i-s-ot-контрагент-l.caption'),
             title: i18n.t('forms.application.sitemap.ot.i-i-s-ot-контрагент-l.title'),
-            icon: 'briefcase',
+            icon: 'archive',
             children: null
           }, {
             link: 'i-i-s-ot-т-ч-задан-вод-l',
             caption: i18n.t('forms.application.sitemap.ot.i-i-s-ot-т-ч-задан-вод-l.caption'),
             title: i18n.t('forms.application.sitemap.ot.i-i-s-ot-т-ч-задан-вод-l.title'),
-            icon: 'edit',
+            icon: 'calendar',
             children: null
           }, {
             link: 'i-i-s-ot-путевой-лист-l',
             caption: i18n.t('forms.application.sitemap.ot.i-i-s-ot-путевой-лист-l.caption'),
             title: i18n.t('forms.application.sitemap.ot.i-i-s-ot-путевой-лист-l.title'),
-            icon: 'calendar',
+            icon: 'chart line',
             children: null
           }]
         }

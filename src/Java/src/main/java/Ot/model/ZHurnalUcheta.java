@@ -54,6 +54,16 @@ public class ZHurnalUcheta {
     @JoinColumn(name = "TranspSr", insertable = false, updatable = false)
     private TranspSr transpsr;
 
+    @EdmIgnore
+    @Converter(converterClass = UUIDConverter.class, name = "Organizaciya")
+    @Convert("Organizaciya")
+    @Column(name = "Организация", length = 16, unique = true, nullable = false)
+    private UUID _organizaciyaid;
+
+    @ManyToOne(optional = false, fetch = FetchType.LAZY)
+    @JoinColumn(name = "Organizaciya", insertable = false, updatable = false)
+    private Organizaciya organizaciya;
+
 
     public ZHurnalUcheta() {
         super();

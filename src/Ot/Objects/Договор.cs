@@ -49,8 +49,6 @@ namespace IIS.Ot
         
         private string fОбязанПосред;
         
-        private IIS.Ot.Контрагент fКонтрагент;
-        
         private IIS.Ot.Организация fОрганизация;
         
         private IIS.Ot.РукОтдЛог fРукОтдЛог;
@@ -188,40 +186,6 @@ namespace IIS.Ot
         /// <summary>
         /// Договор.
         /// </summary>
-        // *** Start programmer edit section *** (Договор.Контрагент CustomAttributes)
-
-        // *** End programmer edit section *** (Договор.Контрагент CustomAttributes)
-        [PropertyStorage(new string[] {
-                "Контрагент"})]
-        [NotNull()]
-        public virtual IIS.Ot.Контрагент Контрагент
-        {
-            get
-            {
-                // *** Start programmer edit section *** (Договор.Контрагент Get start)
-
-                // *** End programmer edit section *** (Договор.Контрагент Get start)
-                IIS.Ot.Контрагент result = this.fКонтрагент;
-                // *** Start programmer edit section *** (Договор.Контрагент Get end)
-
-                // *** End programmer edit section *** (Договор.Контрагент Get end)
-                return result;
-            }
-            set
-            {
-                // *** Start programmer edit section *** (Договор.Контрагент Set start)
-
-                // *** End programmer edit section *** (Договор.Контрагент Set start)
-                this.fКонтрагент = value;
-                // *** Start programmer edit section *** (Договор.Контрагент Set end)
-
-                // *** End programmer edit section *** (Договор.Контрагент Set end)
-            }
-        }
-        
-        /// <summary>
-        /// Договор.
-        /// </summary>
         // *** Start programmer edit section *** (Договор.Организация CustomAttributes)
 
         // *** End programmer edit section *** (Договор.Организация CustomAttributes)
@@ -294,7 +258,6 @@ namespace IIS.Ot
         public virtual void Отправить()
         {
             // *** Start programmer edit section *** (Договор.Отправить method implementation)
-
             return;
             // *** End programmer edit section *** (Договор.Отправить method implementation)
         }
@@ -306,7 +269,6 @@ namespace IIS.Ot
         public virtual void Распечатать()
         {
             // *** Start programmer edit section *** (Договор.Распечатать method implementation)
-
             return;
             // *** End programmer edit section *** (Договор.Распечатать method implementation)
         }

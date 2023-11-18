@@ -51,6 +51,7 @@ CREATE TABLE ЖурналУчета (
  Примечания VARCHAR(255) NULL,
  Дата TIMESTAMP(3) NULL,
  ТранспСр UUID NOT NULL,
+ Организация UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 
 
@@ -90,7 +91,6 @@ CREATE TABLE Договор (
  ДатаОконч TIMESTAMP(3) NULL,
  ДатаНачала TIMESTAMP(3) NULL,
  ОбязанПосред VARCHAR(255) NULL,
- Контрагент UUID NOT NULL,
  Организация UUID NOT NULL,
  РукОтдЛог UUID NOT NULL,
  PRIMARY KEY (primaryKey));
@@ -100,6 +100,7 @@ CREATE TABLE Контрагент (
  primaryKey UUID NOT NULL,
  Организация VARCHAR(255) NULL,
  ОтветсЛицо VARCHAR(255) NULL,
+ Договор UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 
 
@@ -233,6 +234,9 @@ CREATE INDEX Index20483ffaca49581badeade018a121c50ee7c35a1 on Персонал (
  ALTER TABLE ЖурналУчета ADD CONSTRAINT FKc0f15c3cd15b69b53df89577c478e7c118821bd1 FOREIGN KEY (ТранспСр) REFERENCES ТранспСр; 
 CREATE INDEX Indexc0f15c3cd15b69b53df89577c478e7c118821bd1 on ЖурналУчета (ТранспСр); 
 
+ ALTER TABLE ЖурналУчета ADD CONSTRAINT FK3926983d1678751bddd8be5892528c67881e409d FOREIGN KEY (Организация) REFERENCES Организация; 
+CREATE INDEX Index3926983d1678751bddd8be5892528c67881e409d on ЖурналУчета (Организация); 
+
  ALTER TABLE ТранспСр ADD CONSTRAINT FK34774dd65c4ba29110c04b852f6faa1c7f6f33bc FOREIGN KEY (Персонал) REFERENCES Персонал; 
 CREATE INDEX Index34774dd65c4ba29110c04b852f6faa1c7f6f33bc on ТранспСр (Персонал); 
 
@@ -242,14 +246,14 @@ CREATE INDEX Index45d857f2e7a819ea10f3fa25d686c822ddac1cb2 on ТЧВодител
  ALTER TABLE РукОтдЛог ADD CONSTRAINT FK84521e8fc4ba01d22286ca897aca4c6c93d723fc FOREIGN KEY (Персонал) REFERENCES Персонал; 
 CREATE INDEX Index84521e8fc4ba01d22286ca897aca4c6c93d723fc on РукОтдЛог (Персонал); 
 
- ALTER TABLE Договор ADD CONSTRAINT FK103921508857ac0aa291801aaab2c06353507417 FOREIGN KEY (Контрагент) REFERENCES Контрагент; 
-CREATE INDEX Index103921508857ac0aa291801aaab2c06353507417 on Договор (Контрагент); 
-
  ALTER TABLE Договор ADD CONSTRAINT FKdae20386adafafa5414e439ca25af8b657797878 FOREIGN KEY (Организация) REFERENCES Организация; 
 CREATE INDEX Indexdae20386adafafa5414e439ca25af8b657797878 on Договор (Организация); 
 
  ALTER TABLE Договор ADD CONSTRAINT FK3c35d73f6883280f401fde53b1bb08da5e95e60a FOREIGN KEY (РукОтдЛог) REFERENCES РукОтдЛог; 
 CREATE INDEX Index3c35d73f6883280f401fde53b1bb08da5e95e60a on Договор (РукОтдЛог); 
+
+ ALTER TABLE Контрагент ADD CONSTRAINT FKe1cf2b355d0dd428f8cdaaf411c794c81cb1d49d FOREIGN KEY (Договор) REFERENCES Договор; 
+CREATE INDEX Indexe1cf2b355d0dd428f8cdaaf411c794c81cb1d49d on Контрагент (Договор); 
 
  ALTER TABLE ТЧЗаданВод ADD CONSTRAINT FKc284c81b6a7c408bc998be9536fa73c8297cfd5b FOREIGN KEY (Контрагент) REFERENCES Контрагент; 
 CREATE INDEX Indexc284c81b6a7c408bc998be9536fa73c8297cfd5b on ТЧЗаданВод (Контрагент); 

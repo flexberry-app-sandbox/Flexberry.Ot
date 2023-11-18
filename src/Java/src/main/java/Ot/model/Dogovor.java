@@ -36,16 +36,6 @@ public class Dogovor {
     private String обязанпосред;
 
     @EdmIgnore
-    @Converter(converterClass = UUIDConverter.class, name = "Kontragent")
-    @Convert("Kontragent")
-    @Column(name = "Контрагент", length = 16, unique = true, nullable = false)
-    private UUID _kontragentid;
-
-    @ManyToOne(optional = false, fetch = FetchType.LAZY)
-    @JoinColumn(name = "Kontragent", insertable = false, updatable = false)
-    private Kontragent kontragent;
-
-    @EdmIgnore
     @Converter(converterClass = UUIDConverter.class, name = "Organizaciya")
     @Convert("Organizaciya")
     @Column(name = "Организация", length = 16, unique = true, nullable = false)

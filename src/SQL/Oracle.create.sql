@@ -95,6 +95,8 @@ CREATE TABLE "ЖурналУчета"
 
 	"ТранспСр" RAW(16) NOT NULL,
 
+	"Организация" RAW(16) NOT NULL,
+
 	 PRIMARY KEY ("primaryKey")
 ) ;
 
@@ -168,8 +170,6 @@ CREATE TABLE "Договор"
 
 	"ОбязанПосред" NVARCHAR2(255) NULL,
 
-	"Контрагент" RAW(16) NOT NULL,
-
 	"Организация" RAW(16) NOT NULL,
 
 	"РукОтдЛог" RAW(16) NOT NULL,
@@ -186,6 +186,8 @@ CREATE TABLE "Контрагент"
 	"Организация" NVARCHAR2(255) NULL,
 
 	"ОтветсЛицо" NVARCHAR2(255) NULL,
+
+	"Договор" RAW(16) NOT NULL,
 
 	 PRIMARY KEY ("primaryKey")
 ) ;
@@ -437,6 +439,11 @@ ALTER TABLE "ЖурналУчета"
 
 CREATE INDEX "ЖурналУчета_I_6346" on "ЖурналУчета" ("ТранспСр");
 
+ALTER TABLE "ЖурналУчета"
+	ADD CONSTRAINT "ЖурналУчета_F_8210" FOREIGN KEY ("Организация") REFERENCES "Организация" ("primaryKey");
+
+CREATE INDEX "ЖурналУчета_IО_316" on "ЖурналУчета" ("Организация");
+
 ALTER TABLE "ТранспСр"
 	ADD CONSTRAINT "ТранспСр_FПер_8118" FOREIGN KEY ("Персонал") REFERENCES "Персонал" ("primaryKey");
 
@@ -453,11 +460,6 @@ ALTER TABLE "РукОтдЛог"
 CREATE INDEX "РукОтдЛог_IПе_3825" on "РукОтдЛог" ("Персонал");
 
 ALTER TABLE "Договор"
-	ADD CONSTRAINT "Договор_FКонт_1641" FOREIGN KEY ("Контрагент") REFERENCES "Контрагент" ("primaryKey");
-
-CREATE INDEX "Договор_IКонтр_125" on "Договор" ("Контрагент");
-
-ALTER TABLE "Договор"
 	ADD CONSTRAINT "Договор_FОрга_5830" FOREIGN KEY ("Организация") REFERENCES "Организация" ("primaryKey");
 
 CREATE INDEX "Договор_IОрга_9987" on "Договор" ("Организация");
@@ -466,6 +468,11 @@ ALTER TABLE "Договор"
 	ADD CONSTRAINT "Договор_FРукО_2166" FOREIGN KEY ("РукОтдЛог") REFERENCES "РукОтдЛог" ("primaryKey");
 
 CREATE INDEX "Договор_IРукО_7678" on "Договор" ("РукОтдЛог");
+
+ALTER TABLE "Контрагент"
+	ADD CONSTRAINT "Контрагент_FД_4263" FOREIGN KEY ("Договор") REFERENCES "Договор" ("primaryKey");
+
+CREATE INDEX "Контрагент_IД_3264" on "Контрагент" ("Договор");
 
 ALTER TABLE "ТЧЗаданВод"
 	ADD CONSTRAINT "ТЧЗаданВод_FК_8060" FOREIGN KEY ("Контрагент") REFERENCES "Контрагент" ("primaryKey");

@@ -12,6 +12,7 @@ export let Model = Mixin.create({
   примечания: DS.attr('string'),
   пробег: DS.attr('decimal'),
   фИО: DS.attr('string'),
+  организация: DS.belongsTo('i-i-s-ot-организация', { inverse: null, async: false }),
   транспСр: DS.belongsTo('i-i-s-ot-трансп-ср', { inverse: null, async: false })
 });
 
@@ -61,6 +62,13 @@ export let ValidationRules = {
     descriptionKey: 'models.i-i-s-ot-журнал-учета.validations.фИО.__caption__',
     validators: [
       validator('ds-error'),
+    ],
+  },
+  организация: {
+    descriptionKey: 'models.i-i-s-ot-журнал-учета.validations.организация.__caption__',
+    validators: [
+      validator('ds-error'),
+      validator('presence', true),
     ],
   },
   транспСр: {

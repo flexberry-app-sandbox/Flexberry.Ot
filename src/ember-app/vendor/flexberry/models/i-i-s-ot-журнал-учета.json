@@ -74,6 +74,13 @@
     {
       "polymorphic": false,
       "presence": true,
+      "name": "организация",
+      "relatedTo": "i-i-s-ot-организация",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
       "name": "транспСр",
       "relatedTo": "i-i-s-ot-трансп-ср",
       "inverse": null

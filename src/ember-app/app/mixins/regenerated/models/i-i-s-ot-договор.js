@@ -9,7 +9,6 @@ export let Model = Mixin.create({
   датаНачала: DS.attr('date'),
   датаОконч: DS.attr('date'),
   обязанПосред: DS.attr('string'),
-  контрагент: DS.belongsTo('i-i-s-ot-контрагент', { inverse: null, async: false }),
   организация: DS.belongsTo('i-i-s-ot-организация', { inverse: null, async: false }),
   рукОтдЛог: DS.belongsTo('i-i-s-ot-рук-отд-лог', { inverse: null, async: false })
 });
@@ -40,13 +39,6 @@ export let ValidationRules = {
     descriptionKey: 'models.i-i-s-ot-договор.validations.обязанПосред.__caption__',
     validators: [
       validator('ds-error'),
-    ],
-  },
-  контрагент: {
-    descriptionKey: 'models.i-i-s-ot-договор.validations.контрагент.__caption__',
-    validators: [
-      validator('ds-error'),
-      validator('presence', true),
     ],
   },
   организация: {

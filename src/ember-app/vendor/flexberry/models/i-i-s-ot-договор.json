@@ -47,13 +47,6 @@
     {
       "polymorphic": false,
       "presence": true,
-      "name": "контрагент",
-      "relatedTo": "i-i-s-ot-контрагент",
-      "inverse": null
-    },
-    {
-      "polymorphic": false,
-      "presence": true,
       "name": "организация",
       "relatedTo": "i-i-s-ot-организация",
       "inverse": null
