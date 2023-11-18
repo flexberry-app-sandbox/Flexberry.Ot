@@ -1,0 +1,83 @@
+﻿{
+  "name": "IISOtТЧВодитель",
+  "modelName": "i-i-s-ot-т-ч-водитель",
+  "className": "ТЧВодитель",
+  "nameSpace": "IIS.Ot",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "допущен",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "табелНомер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "персонал",
+      "relatedTo": "i-i-s-ot-персонал",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТЧВодительE",
+      "modelName": "i-i-s-ot-т-ч-водитель",
+      "attrs": [
+        {
+          "name": "табелНомер",
+          "caption": "Табел номер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "допущен",
+          "caption": "Допущен",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ТЧВодительL",
+      "modelName": "i-i-s-ot-т-ч-водитель",
+      "attrs": [
+        {
+          "name": "табелНомер",
+          "caption": "Табел номер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "допущен",
+          "caption": "Допущен",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

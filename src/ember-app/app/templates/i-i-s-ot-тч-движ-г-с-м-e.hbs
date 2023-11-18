@@ -1,0 +1,68 @@
+<h3 class="ui header">{{t "forms.i-i-s-ot-тч-движ-г-с-м-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.количество
+      class=(if (v-get validationModel "количество" "isInvalid") "error")
+      label=(t "forms.i-i-s-ot-тч-движ-г-с-м-e.количество-caption")
+      data-test-i-i-s-ot-тч-движ-г-с-м-e-количество=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "количество" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-ot-тч-движ-г-с-м-e.дата-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.дата
+      class=(if (v-get validationModel "дата" "isInvalid") "error")
+      data-test-i-i-s-ot-тч-движ-г-с-м-e-дата=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "дата" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.остаток
+      class=(if (v-get validationModel "остаток" "isInvalid") "error")
+      label=(t "forms.i-i-s-ot-тч-движ-г-с-м-e.остаток-caption")
+      data-test-i-i-s-ot-тч-движ-г-с-м-e-остаток=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "остаток" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.маркаГСМ
+      class=(if (v-get validationModel "маркаГСМ" "isInvalid") "error")
+      label=(t "forms.i-i-s-ot-тч-движ-г-с-м-e.маркаГСМ-caption")
+      data-test-i-i-s-ot-тч-движ-г-с-м-e-маркаГСМ=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "маркаГСМ" "message")}}
+  </div>
+</form>

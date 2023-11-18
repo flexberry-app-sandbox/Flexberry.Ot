@@ -1,0 +1,125 @@
+﻿{
+  "name": "IISOtПутевойЛист",
+  "modelName": "i-i-s-ot-путевой-лист",
+  "className": "ПутевойЛист",
+  "nameSpace": "IIS.Ot",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "выдатьТоплива",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "гаражНомер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "сопровожЛица",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "транспСр",
+      "relatedTo": "i-i-s-ot-трансп-ср",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ПутевойЛистE",
+      "modelName": "i-i-s-ot-путевой-лист",
+      "attrs": [
+        {
+          "name": "выдатьТоплива",
+          "caption": "Выдать топлива",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "сопровожЛица",
+          "caption": "Сопровож лица",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "гаражНомер",
+          "caption": "Гараж номер",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ПутевойЛистL",
+      "modelName": "i-i-s-ot-путевой-лист",
+      "attrs": [
+        {
+          "name": "выдатьТоплива",
+          "caption": "Выдать топлива",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "сопровожЛица",
+          "caption": "Сопровож лица",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "гаражНомер",
+          "caption": "Гараж номер",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

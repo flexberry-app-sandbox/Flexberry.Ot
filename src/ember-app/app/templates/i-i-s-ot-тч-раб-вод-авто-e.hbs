@@ -1,0 +1,68 @@
+<h3 class="ui header">{{t "forms.i-i-s-ot-тч-раб-вод-авто-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.показСпидом
+      class=(if (v-get validationModel "показСпидом" "isInvalid") "error")
+      label=(t "forms.i-i-s-ot-тч-раб-вод-авто-e.показСпидом-caption")
+      data-test-i-i-s-ot-тч-раб-вод-авто-e-показСпидом=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "показСпидом" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.времяРаботы
+      class=(if (v-get validationModel "времяРаботы" "isInvalid") "error")
+      label=(t "forms.i-i-s-ot-тч-раб-вод-авто-e.времяРаботы-caption")
+      data-test-i-i-s-ot-тч-раб-вод-авто-e-времяРаботы=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "времяРаботы" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.нулевойПробег
+      class=(if (v-get validationModel "нулевойПробег" "isInvalid") "error")
+      label=(t "forms.i-i-s-ot-тч-раб-вод-авто-e.нулевойПробег-caption")
+      data-test-i-i-s-ot-тч-раб-вод-авто-e-нулевойПробег=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "нулевойПробег" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-ot-тч-раб-вод-авто-e.датаВремя-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.датаВремя
+      class=(if (v-get validationModel "датаВремя" "isInvalid") "error")
+      data-test-i-i-s-ot-тч-раб-вод-авто-e-датаВремя=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "датаВремя" "message")}}
+  </div>
+</form>

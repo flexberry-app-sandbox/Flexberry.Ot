@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Тч движ ГСМ",
+  "name": "IISOtТчДвижГСМE",
+  "className": "ТчДвижГСМE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-ot-тч-движ-г-с-м",
+      "modelProjection": "ТчДвижГСМE"
+    }
+  ]
+}

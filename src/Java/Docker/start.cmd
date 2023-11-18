@@ -1,0 +1,1 @@
+docker-compose -p ot-java up -d

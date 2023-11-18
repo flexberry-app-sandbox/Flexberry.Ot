@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-ot-т-ч-задан-вод-e",
+  "editForm": "i-i-s-ot-т-ч-задан-вод-e",
+  "external": false,
+  "caption": "Т ч задан вод",
+  "name": "IISOtТЧЗаданВодL",
+  "className": "ТЧЗаданВодL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-ot-т-ч-задан-вод",
+      "modelProjection": "ТЧЗаданВодL"
+    }
+  ]
+}

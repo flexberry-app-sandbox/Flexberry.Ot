@@ -1,0 +1,117 @@
+﻿{
+  "name": "IISOtТчДвижГСМ",
+  "modelName": "i-i-s-ot-тч-движ-г-с-м",
+  "className": "ТчДвижГСМ",
+  "nameSpace": "IIS.Ot",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "количество",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "маркаГСМ",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "остаток",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТчДвижГСМE",
+      "modelName": "i-i-s-ot-тч-движ-г-с-м",
+      "attrs": [
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "остаток",
+          "caption": "Остаток",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "маркаГСМ",
+          "caption": "Марка ГСМ",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ТчДвижГСМL",
+      "modelName": "i-i-s-ot-тч-движ-г-с-м",
+      "attrs": [
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "остаток",
+          "caption": "Остаток",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "маркаГСМ",
+          "caption": "Марка ГСМ",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

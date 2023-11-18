@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Журнал учета",
+  "name": "IISOtЖурналУчетаE",
+  "className": "ЖурналУчетаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-ot-журнал-учета",
+      "modelProjection": "ЖурналУчетаE"
+    }
+  ]
+}

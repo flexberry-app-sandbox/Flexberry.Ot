@@ -1,0 +1,75 @@
+﻿{
+  "name": "IISOtКонтрагент",
+  "modelName": "i-i-s-ot-контрагент",
+  "className": "Контрагент",
+  "nameSpace": "IIS.Ot",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "организация",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "ответсЛицо",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КонтрагентE",
+      "modelName": "i-i-s-ot-контрагент",
+      "attrs": [
+        {
+          "name": "организация",
+          "caption": "Организация",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "ответсЛицо",
+          "caption": "Ответс лицо",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "КонтрагентL",
+      "modelName": "i-i-s-ot-контрагент",
+      "attrs": [
+        {
+          "name": "организация",
+          "caption": "Организация",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "ответсЛицо",
+          "caption": "Ответс лицо",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

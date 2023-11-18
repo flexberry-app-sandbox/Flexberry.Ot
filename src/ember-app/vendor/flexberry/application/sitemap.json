@@ -1,0 +1,106 @@
+﻿{
+  "applicationCaption": "Ot",
+  "applicationTitle": "Ot",
+  "items": [
+    {
+      "link": null,
+      "menuName": "ot",
+      "caption": "Ot",
+      "title": "Ot",
+      "children": [
+        {
+          "link": "i-i-s-ot-тч-раб-вод-авто-l",
+          "menuName": null,
+          "caption": "Тч раб вод авто",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-ot-организация-l",
+          "menuName": null,
+          "caption": "Организация",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-ot-персонал-l",
+          "menuName": null,
+          "caption": "Персонал",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-ot-тч-движ-г-с-м-l",
+          "menuName": null,
+          "caption": "Тч движ ГСМ",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-ot-журнал-учета-l",
+          "menuName": null,
+          "caption": "Журнал учета",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-ot-трансп-ср-l",
+          "menuName": null,
+          "caption": "Трансп ср",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-ot-должности-l",
+          "menuName": null,
+          "caption": "Должности",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-ot-т-ч-водитель-l",
+          "menuName": null,
+          "caption": "Т ч водитель",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-ot-рук-отд-лог-l",
+          "menuName": null,
+          "caption": "Рук отд лог",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-ot-договор-l",
+          "menuName": null,
+          "caption": "Договор",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-ot-контрагент-l",
+          "menuName": null,
+          "caption": "Контрагент",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-ot-т-ч-задан-вод-l",
+          "menuName": null,
+          "caption": "Т ч задан вод",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-ot-путевой-лист-l",
+          "menuName": null,
+          "caption": "Путевой лист",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

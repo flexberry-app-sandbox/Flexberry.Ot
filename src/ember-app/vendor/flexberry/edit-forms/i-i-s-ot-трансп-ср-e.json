@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Трансп ср",
+  "name": "IISOtТранспСрE",
+  "className": "ТранспСрE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-ot-трансп-ср",
+      "modelProjection": "ТранспСрE"
+    }
+  ]
+}

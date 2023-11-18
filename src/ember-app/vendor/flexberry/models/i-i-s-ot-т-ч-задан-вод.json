@@ -1,0 +1,125 @@
+﻿{
+  "name": "IISOtТЧЗаданВод",
+  "modelName": "i-i-s-ot-т-ч-задан-вод",
+  "className": "ТЧЗаданВод",
+  "nameSpace": "IIS.Ot",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаВремя",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "пунктНазнач",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "пунктОтправ",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "расстояние",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "контрагент",
+      "relatedTo": "i-i-s-ot-контрагент",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТЧЗаданВодE",
+      "modelName": "i-i-s-ot-т-ч-задан-вод",
+      "attrs": [
+        {
+          "name": "расстояние",
+          "caption": "Расстояние",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "датаВремя",
+          "caption": "Дата время",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "пунктНазнач",
+          "caption": "Пункт назнач",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "пунктОтправ",
+          "caption": "Пункт отправ",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ТЧЗаданВодL",
+      "modelName": "i-i-s-ot-т-ч-задан-вод",
+      "attrs": [
+        {
+          "name": "расстояние",
+          "caption": "Расстояние",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "датаВремя",
+          "caption": "Дата время",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "пунктНазнач",
+          "caption": "Пункт назнач",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "пунктОтправ",
+          "caption": "Пункт отправ",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

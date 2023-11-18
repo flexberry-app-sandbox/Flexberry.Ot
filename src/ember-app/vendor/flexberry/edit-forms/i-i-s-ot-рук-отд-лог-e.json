@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Рук отд лог",
+  "name": "IISOtРукОтдЛогE",
+  "className": "РукОтдЛогE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-ot-рук-отд-лог",
+      "modelProjection": "РукОтдЛогE"
+    }
+  ]
+}

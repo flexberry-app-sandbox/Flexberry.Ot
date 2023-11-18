@@ -1,0 +1,117 @@
+﻿{
+  "name": "IISOtТчРабВодАвто",
+  "modelName": "i-i-s-ot-тч-раб-вод-авто",
+  "className": "ТчРабВодАвто",
+  "nameSpace": "IIS.Ot",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "времяРаботы",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "датаВремя",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "нулевойПробег",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "показСпидом",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТчРабВодАвтоE",
+      "modelName": "i-i-s-ot-тч-раб-вод-авто",
+      "attrs": [
+        {
+          "name": "показСпидом",
+          "caption": "Показ спидом",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "времяРаботы",
+          "caption": "Время работы",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "нулевойПробег",
+          "caption": "Нулевой пробег",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "датаВремя",
+          "caption": "Дата время",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ТчРабВодАвтоL",
+      "modelName": "i-i-s-ot-тч-раб-вод-авто",
+      "attrs": [
+        {
+          "name": "показСпидом",
+          "caption": "Показ спидом",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "времяРаботы",
+          "caption": "Время работы",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "нулевойПробег",
+          "caption": "Нулевой пробег",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "датаВремя",
+          "caption": "Дата время",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
